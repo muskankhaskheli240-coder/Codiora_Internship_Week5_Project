@@ -1,0 +1,34 @@
+{
+  "heading": "Get In Touch",
+  "title": {
+    "main": "Let's Work",
+    "highlight": "Together"
+  },
+  "infoHeading": "Contact Details",
+  "infoSub": "Have a project in mind? I'd love to hear about it. Send me a message and let's create something great.",
+  "details": [
+    {
+      "id": "email",
+      "icon": "email",
+      "label": "Email",
+      "value": "muskankhaskheli240@gmail.com",
+      "href": "mailto:muskankhaskheli240@gmail.com"
+    },
+    {
+      "id": "linkedin",
+      "icon": "linkedin",
+      "label": "LinkedIn",
+      "value": "linkedin.com/in/muskan",
+      "href": "https://www.linkedin.com/in/muskan-zahid-ali-khaskheli-41398b389"
+    },
+    {
+      "id": "github",
+      "icon": "github",
+      "label": "GitHub",
+      "value": "github.com/muskan",
+      "href": "https://github.com/muskankhaskheli240-coder"
+    }
+  ],
+  "phone": "",
+  "address": ""
+}

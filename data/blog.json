@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Modern CSS Techniques Every Frontend Developer Should Know",
+    "image": "blog_1.png",
+    "excerpt": "A look at the CSS features reshaping how we build layouts, from container queries to the latest selectors.",
+    "date": "June 10, 2026",
+    "readTime": "6 min read",
+    "content": "CSS has evolved far beyond simple styling. Container queries let components respond to their own container rather than the viewport, making truly modular layouts possible. The :has() selector brings parent-aware styling without JavaScript. CSS Grid subgrid, scroll-driven animations, and native nesting all reduce the need for preprocessors. Staying current with these features means writing less code that does more, while keeping stylesheets easier to maintain as a project grows.",
+    "tags": ["CSS", "Frontend", "Web Design"]
+  },
+  {
+    "id": 2,
+    "title": "JavaScript Best Practices for Clean Code",
+    "image": "blog_2.png",
+    "excerpt": "Practical habits for writing JavaScript that's easier to read, test, and maintain over time.",
+    "date": "June 2, 2026",
+    "readTime": "5 min read",
+    "content": "Clean JavaScript starts with naming things clearly and keeping functions small enough to understand at a glance. Favor pure functions where possible, avoid deeply nested conditionals, and let early returns simplify control flow. Consistent formatting and meaningful comments matter less than structure — code that is organized into small, single-purpose pieces is easier to test, debug, and hand off to someone else. Treat refactoring as a normal part of writing code, not an afterthought.",
+    "tags": ["JavaScript", "Clean Code", "Best Practices"]
+  },
+  {
+    "id": 3,
+    "title": "Why Responsive Design Matters",
+    "image": "blog_3.jpg",
+    "excerpt": "Why designing for every screen size isn't optional anymore, and how to approach it without the guesswork.",
+    "date": "May 22, 2026",
+    "readTime": "4 min read",
+    "content": "More people browse the web on phones than on desktops, which makes responsive design a baseline expectation rather than a bonus feature. A mobile-first approach forces simpler, more focused layouts that scale up gracefully instead of being crammed down. Flexible grids, relative units, and thoughtful breakpoints keep a site usable across an enormous range of screen sizes, and that consistency directly affects how trustworthy and professional a site feels to visitors.",
+    "tags": ["Responsive Design", "UX", "Mobile-First"]
+  }
+]

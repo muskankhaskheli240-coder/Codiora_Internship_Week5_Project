@@ -1,0 +1,56 @@
+[
+  {
+    "id": "html5",
+    "name": "HTML5",
+    "icon": "html5",
+    "iconColor": "#e34f26",
+    "percentage": 92,
+    "category": "Markup",
+    "description": "Semantic markup, accessibility, and structured layouts."
+  },
+  {
+    "id": "css3",
+    "name": "CSS3",
+    "icon": "css3",
+    "iconColor": "#264de4",
+    "percentage": 88,
+    "category": "Styling",
+    "description": "Flexbox, Grid, animations, and responsive design."
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "icon": "javascript",
+    "iconColor": "#f7df1e",
+    "percentage": 78,
+    "category": "Scripting",
+    "description": "DOM manipulation, ES6+, async/await, and interactivity."
+  },
+  {
+    "id": "responsive-design",
+    "name": "Responsive Design",
+    "icon": "responsive",
+    "iconColor": "#a855f7",
+    "percentage": 85,
+    "category": "Design",
+    "description": "Mobile-first layouts that work across every screen size."
+  },
+  {
+    "id": "git-github",
+    "name": "Git & GitHub",
+    "icon": "git",
+    "iconColor": "#f05032",
+    "percentage": 70,
+    "category": "Tooling",
+    "description": "Version control, branching, and collaborative workflows."
+  },
+  {
+    "id": "uiux-sense",
+    "name": "UI/UX Sense",
+    "icon": "uiux",
+    "iconColor": "#d946ef",
+    "percentage": 80,
+    "category": "Design",
+    "description": "Design thinking, visual hierarchy, and user-focused craft."
+  }
+]

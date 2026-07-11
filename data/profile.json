@@ -1,0 +1,56 @@
+{
+  "name": {
+    "line1": "Muskan Zahid",
+    "line2": "Ali Khaskheli",
+    "initials": "MK"
+  },
+  "roles": [
+    "Frontend Developer",
+    "Web Developer",
+    "HTML CSS Developer",
+    "UI Designer"
+  ],
+  "bio": "Passionate about crafting clean, beautiful, and responsive web experiences. I turn ideas into elegant interfaces, one pixel at a time.",
+  "resume": "",
+  "heroBadges": [
+    "Frontend Dev",
+    "HTML & CSS",
+    "Creative Coder"
+  ],
+  "socials": {
+    "email": "muskankhaskheli240@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/muskan-zahid-ali-khaskheli-41398b389",
+    "github": "https://github.com/muskankhaskheli240-coder"
+  },
+  "about": {
+    "headingLine1": "Crafting Digital",
+    "headingHighlight": "Experiences",
+    "bioParagraphs": [
+      "Hey there! I'm Muskan Zahid Ali Khaskheli, a self-driven Frontend Developer who genuinely loves the art of clean, purposeful design. To me, the web shouldn't just be functional it should feel beautiful, intuitive, and work flawlessly for absolutely everyone who interacts with it.",
+      "From pixel-perfect layouts to smooth interactions, I focus on every detail to build experiences that leave a lasting impression. Always learning, always improving."
+    ],
+    "infoCards": [
+      {
+        "icon": "education",
+        "label": "Education",
+        "value": "BSIT Student at SAU Tandojam & Self-taught Frontend Developer"
+      },
+      {
+        "icon": "goal",
+        "label": "Career Goal",
+        "value": "To evolve my frontend expertise into full-stack development, building powerful, end-to-end web applications."
+      },
+      {
+        "icon": "interests",
+        "label": "Interests",
+        "value": "UI Design, Web Animation, Open Source"
+      }
+    ],
+    "stats": [
+      { "id": "stat1", "target": 6, "label": "Projects Built" },
+      { "id": "stat2", "target": 3, "label": "Tech Stacks" },
+      { "id": "stat3", "target": 100, "label": "% Passion Level" },
+      { "id": "stat4", "target": 1, "label": "Year Learning" }
+    ]
+  }
+}
