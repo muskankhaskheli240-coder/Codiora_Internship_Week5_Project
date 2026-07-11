@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muskan Zahid Ali Khaskheli — Frontend Developer</title>
+    <meta name="description" content="Frontend Developer crafting beautiful, responsive web experiences." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ============================================================
+     LOADER
+============================================================ -->
+    <div class="loader" id="loader" aria-hidden="true">
+        <div class="loader__inner">
+            <div class="loader__logo">MK</div>
+            <div class="loader__bar-wrap">
+                <div class="loader__bar" id="loaderBar"></div>
+            </div>
+            <p class="loader__text">Crafting your experience...</p>
+        </div>
+    </div>
+
+    <!-- ============================================================
+     NAVBAR
+============================================================ -->
+    <header class="navbar" id="navbar" role="banner">
+        <a href="#home" class="navbar__logo">Muskan<span class="navbar__dot">.</span></a>
+        <nav aria-label="Main navigation">
+            <ul class="navbar__links" id="navLinks" role="list">
+                <li><a href="#home" class="navbar__link active">Home</a></li>
+                <li><a href="#about" class="navbar__link">About</a></li>
+                <li><a href="#skills" class="navbar__link">Skills</a></li>
+                <li><a href="#projects" class="navbar__link">Projects</a></li>
+                <li><a href="#testimonials" class="navbar__link">Testimonials</a></li>
+                <li><a href="#contact" class="navbar__link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="navbar__actions">
+            <button class="navbar__theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode"
+                title="Toggle Theme">
+                <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <circle cx="12" cy="12" r="5" />
+                    <line x1="12" y1="1" x2="12" y2="3" />
+                    <line x1="12" y1="21" x2="12" y2="23" />
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                    <line x1="1" y1="12" x2="3" y2="12" />
+                    <line x1="21" y1="12" x2="23" y2="12" />
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </svg>
+                <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+            </button>
+        </div>
+        <button class="navbar__hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <main>
+
+        <!-- ============================================================
+     Hero section
+============================================================ -->
+        <section class="hero" id="home" aria-label="Introduction">
+            <div class="hero__container">
+
+                <!-- Left -->
+                <div class="hero__text">
+                    <span class="hero__hello">Hello, I'm</span>
+                    <h1 class="hero__name">
+                        <span class="hero__name-line1">Muskan Zahid</span>
+                        <span class="hero__name-line2">Ali Khaskheli</span>
+                    </h1>
+                    <div class="hero__typed-wrap">
+                        <span class="hero__typed-prefix">I'm a </span>
+                        <span class="hero__typed" id="typedText" aria-live="polite"></span><span
+                            class="hero__cursor">|</span>
+                    </div>
+                    <p class="hero__bio">Passionate about crafting clean, beautiful, and responsive web experiences. I
+                        turn ideas into elegant interfaces, one pixel at a time.</p>
+                    <div class="hero__ctas">
+                        <a href="#projects" class="btn btn--primary">
+                            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M4 6h12M4 10h8M4 14h10" />
+                            </svg>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn btn--glass">
+                            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M2 4h16v12H2zM2 4l8 7 8-7" />
+                            </svg>
+                            Let's Connect
+                        </a>
+                    </div>
+                    <div class="hero__socials">
+                        <a href="mailto:muskankhaskheli240@gmail.com" class="hero__social-btn" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <rect x="2" y="4" width="20" height="16" rx="2" />
+                                <path d="M2 4l10 9 10-9" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muskan-zahid-ali-khaskheli-41398b389" target="_blank"
+                            rel="noopener noreferrer" class="hero__social-btn" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/muskankhaskheli240-coder" target="_blank" rel="noopener noreferrer"
+                            class="hero__social-btn" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="hero__visual">
+                    <div class="hero__blob-wrap">
+                        <div class="hero__blob">
+                            <span class="hero__blob-initials">MK</span>
+                        </div>
+                        <div class="hero__blob-glow" aria-hidden="true"></div>
+                        <div class="hero__badge hero__badge--1">Frontend Dev</div>
+                        <div class="hero__badge hero__badge--2">HTML &amp; CSS</div>
+                        <div class="hero__badge hero__badge--3">Creative Coder</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Scroll hint -->
+            <div class="hero__scroll" aria-hidden="true">
+                <span>Scroll down</span>
+                <div class="hero__scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+     ABOUT me section
+============================================================ -->
+        <section class="about section" id="about" aria-label="About me">
+            <div class="container">
+                <div class="section-label-wrap reveal">
+                    <span class="section-label">About Me</span>
+                </div>
+
+                <div class="about__grid">
+
+                    <!-- Left -->
+                    <div class="about__left reveal">
+                        <h2 class="about__heading">Crafting Digital<br /><span class="gradient-text">Experiences</span>
+                        </h2>
+                        <p class="about__bio">Hey there! I'm Muskan Zahid Ali Khaskheli, a self-driven Frontend
+                            Developer who genuinely loves the art of clean, purposeful design. To me, the web shouldn't
+                            just be functional it should feel beautiful, intuitive, and work flawlessly for absolutely
+                            everyone who interacts with it.</p>
+                        <p class="about__bio">From pixel-perfect layouts to smooth interactions, I focus on every detail
+                            to build experiences that leave a lasting impression. Always learning, always improving.</p>
+
+                        <div class="about__cards">
+                            <div class="about__info-card glass-card">
+                                <div class="about__info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        aria-hidden="true">
+                                        <path d="M22 10v6M2 10l10-9 10 9M5 8v10a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1V8" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="about__info-label">Education</span>
+                                    <span class="about__info-value">BSIT Student at SAU Tandojam & Self-taught Frontend
+                                        Developer</span>
+                                </div>
+                            </div>
+                            <div class="about__info-card glass-card">
+                                <div class="about__info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M12 8v4l3 3" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="about__info-label">Career Goal</span>
+                                    <span class="about__info-value">To evolve my frontend expertise into full-stack
+                                        development, building powerful, end-to-end web applications.</span>
+                                </div>
+                            </div>
+                            <div class="about__info-card glass-card">
+                                <div class="about__info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        aria-hidden="true">
+                                        <path
+                                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="about__info-label">Interests</span>
+                                    <span class="about__info-value">UI Design, Web Animation, Open Source</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Stats -->
+                    <div class="about__right reveal">
+                        <div class="about__stats">
+                            <div class="about__stat glass-card">
+                                <span class="about__stat-num gradient-text" data-target="6" id="stat1">0</span>
+                                <span class="about__stat-label">Projects Built</span>
+                            </div>
+                            <div class="about__stat glass-card">
+                                <span class="about__stat-num gradient-text" data-target="3" id="stat2">0</span>
+                                <span class="about__stat-label">Tech Stacks</span>
+                            </div>
+                            <div class="about__stat glass-card">
+                                <span class="about__stat-num gradient-text" data-target="100" id="stat3">0</span>
+                                <span class="about__stat-label">% Passion Level</span>
+                            </div>
+                            <div class="about__stat glass-card">
+                                <span class="about__stat-num gradient-text" data-target="1" id="stat4">0</span>
+                                <span class="about__stat-label">Year Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+     Skills section
+============================================================ -->
+        <section class="skills section" id="skills" aria-label="Skills">
+            <div class="container">
+                <div class="section-label-wrap reveal">
+                    <span class="section-label">My Skills</span>
+                </div>
+                <h2 class="section-title reveal">Tools I Work <span class="gradient-text">With</span></h2>
+
+                <div class="skills__grid">
+
+                    <!-- HTML5 -->
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-card__icon-wrap" style="--ic:#e34f26">
+                            <svg viewBox="0 0 24 24" fill="#e34f26" aria-hidden="true">
+                                <path
+                                    d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" />
+                            </svg>
+                        </div>
+                        <div class="skill-card__info">
+                            <div class="skill-card__head">
+                                <span class="skill-card__name">HTML5</span>
+                                <span class="skill-card__pct">92%</span>
+                            </div>
+                            <p class="skill-card__desc">Semantic markup, accessibility, and structured layouts.</p>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="92"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-card__icon-wrap" style="--ic:#264de4">
+                            <svg viewBox="0 0 24 24" fill="#264de4" aria-hidden="true">
+                                <path
+                                    d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531l-.232-2.618 10.059.003-.168-2.965z" />
+                            </svg>
+                        </div>
+                        <div class="skill-card__info">
+                            <div class="skill-card__head">
+                                <span class="skill-card__name">CSS3</span>
+                                <span class="skill-card__pct">88%</span>
+                            </div>
+                            <p class="skill-card__desc">Flexbox, Grid, animations, and responsive design.</p>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-card__icon-wrap" style="--ic:#f7df1e">
+                            <svg viewBox="0 0 24 24" fill="#f7df1e" aria-hidden="true">
+                                <path
+                                    d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
+                            </svg>
+                        </div>
+                        <div class="skill-card__info">
+                            <div class="skill-card__head">
+                                <span class="skill-card__name">JavaScript</span>
+                                <span class="skill-card__pct">78%</span>
+                            </div>
+                            <p class="skill-card__desc">DOM manipulation, ES6+, async/await, and interactivity.</p>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Responsive Design -->
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-card__icon-wrap" style="--ic:#a855f7">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="1.8" aria-hidden="true">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <path d="M8 21h8M12 17v4" />
+                            </svg>
+                        </div>
+                        <div class="skill-card__info">
+                            <div class="skill-card__head">
+                                <span class="skill-card__name">Responsive Design</span>
+                                <span class="skill-card__pct">85%</span>
+                            </div>
+                            <p class="skill-card__desc">Mobile-first layouts that work across every screen size.</p>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Git & GitHub -->
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-card__icon-wrap" style="--ic:#f05032">
+                            <svg viewBox="0 0 24 24" fill="#f05032" aria-hidden="true">
+                                <path
+                                    d="M23.546 10.93L13.067.452a1.55 1.55 0 00-2.188 0L8.708 2.627l2.76 2.76a1.838 1.838 0 012.327 2.341l2.658 2.66a1.838 1.838 0 011.9 2.9 1.846 1.846 0 01-2.41.26l-2.55-2.55v6.697a1.846 1.846 0 11-2.13-1.82V9.61a1.845 1.845 0 01-.998-2.424L7.51 4.39 .452 11.45a1.55 1.55 0 000 2.188l10.48 10.477a1.55 1.55 0 002.186 0l10.428-10.428a1.55 1.55 0 000-2.187" />
+                            </svg>
+                        </div>
+                        <div class="skill-card__info">
+                            <div class="skill-card__head">
+                                <span class="skill-card__name">Git &amp; GitHub</span>
+                                <span class="skill-card__pct">70%</span>
+                            </div>
+                            <p class="skill-card__desc">Version control, branching, and collaborative workflows.</p>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UI/UX Sense -->
+                    <div class="skill-card glass-card reveal">
+                        <div class="skill-card__icon-wrap" style="--ic:#d946ef">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#d946ef" stroke-width="1.8" aria-hidden="true">
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+                            </svg>
+                        </div>
+                        <div class="skill-card__info">
+                            <div class="skill-card__head">
+                                <span class="skill-card__name">UI/UX Sense</span>
+                                <span class="skill-card__pct">80%</span>
+                            </div>
+                            <p class="skill-card__desc">Design thinking, visual hierarchy, and user-focused craft.</p>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+     Projects section
+============================================================ -->
+        <section class="projects section" id="projects" aria-label="Projects">
+            <div class="container">
+                <div class="section-label-wrap reveal">
+                    <span class="section-label">My Work</span>
+                </div>
+                <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+                <!-- START WEEK 4 ADDITIONS -->
+                <div class="project-search-wrap reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="project-search-wrap__icon" aria-hidden="true">
+                        <circle cx="11" cy="11" r="7" /><path d="M21 21l-4.3-4.3" />
+                    </svg>
+                    <input type="text" id="projectSearchInput" class="project-search-wrap__input"
+                        placeholder="Search projects by name, tech, or description..."
+                        aria-label="Search projects" autocomplete="off" />
+                </div>
+                <!-- END WEEK 4 ADDITIONS -->
+                <!-- START WEEK 3 ADDITIONS -->
+                <div class="project-filters reveal" role="group" aria-label="Filter projects by category">
+                    <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                    <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Web
+                        Development</button>
+                    <button type="button" class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile
+                        Development</button>
+                    <button type="button" class="filter-btn" data-filter="uiux" aria-pressed="false">UI/UX
+                        Design</button>
+                    <button type="button" class="filter-btn" data-filter="data" aria-pressed="false">Data
+                        Analysis</button>
+                    <button type="button" class="filter-btn" data-filter="other" aria-pressed="false">Other</button>
+                </div>
+                <!-- END WEEK 3 ADDITIONS -->
+                <div class="projects__grid">
+
+                    <!-- 1 -->
+                    <article class="project-card glass-card reveal" data-category="web" data-project="1" tabindex="0"
+                        role="button" aria-label="View details: Tech Journey Website">
+                        <div class="project-card__img" style="--pg:linear-gradient(135deg,#1a0533,#3b1070)">
+                            <svg class="project-card__icon" viewBox="0 0 48 48" fill="none"
+                                stroke="rgba(168,85,247,0.6)" stroke-width="1.5" aria-hidden="true">
+                                <rect x="4" y="8" width="40" height="32" rx="3" />
+                                <path d="M14 20h20M14 26h12" />
+                            </svg>
+                            <div class="project-card__overlay">
+                                <a href="https://github.com/muskankhaskheli240-coder/Decodlab_Firstproject.git"
+                                    class="project-card__action" aria-label="GitHub" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                                <a href="https://muskankhaskheli240-coder.github.io/Decodlab_Firstproject/"
+                                    class="project-card__action" aria-label="Live Demo" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__tags">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+                            </div>
+                            <h3 class="project-card__title">Tech Journey Website</h3>
+                            <p class="project-card__desc">An interactive website documenting a developer's learning
+                                journey with timelines and milestones.</p>
+                        </div>
+                    </article>
+
+                    <!-- 2 -->
+                    <article class="project-card glass-card reveal" data-category="other" data-project="2" tabindex="0"
+                        role="button" aria-label="View details: Beautiful Gift Box Website">
+                        <div class="project-card__img" style="--pg:linear-gradient(135deg,#2d0030,#7a1060)">
+                            <svg class="project-card__icon" viewBox="0 0 48 48" fill="none"
+                                stroke="rgba(217,70,239,0.6)" stroke-width="1.5" aria-hidden="true">
+                                <rect x="14" y="10" width="20" height="28" rx="3" />
+                                <path d="M20 10V7a2 2 0 014 0v3M18 38l6 4 6-4" />
+                            </svg>
+                            <div class="project-card__overlay">
+                                <a href="https://github.com/muskankhaskheli240-coder/Decodlabs_SecondProject.git"
+                                    class="project-card__action" aria-label="GitHub" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                                <a href="https://muskankhaskheli240-coder.github.io/Decodlabs_SecondProject/"
+                                    class="project-card__action" aria-label="Live Demo" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__tags">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span
+                                    class="tag">Animations</span>
+                            </div>
+                            <h3 class="project-card__title">Beautiful Gift Box Website</h3>
+                            <p class="project-card__desc">Animated CSS gift unboxing experience with elegant reveal
+                                effects and delightful micro-interactions.</p>
+                        </div>
+                    </article>
+
+                    <!-- 3 -->
+                    <article class="project-card glass-card reveal" data-category="uiux" data-project="3" tabindex="0"
+                        role="button" aria-label="View details: MoodSphere">
+                        <div class="project-card__img" style="--pg:linear-gradient(135deg,#001a3a,#0a2d6e)">
+                            <svg class="project-card__icon" viewBox="0 0 48 48" fill="none"
+                                stroke="rgba(99,179,237,0.6)" stroke-width="1.5" aria-hidden="true">
+                                <circle cx="24" cy="24" r="16" />
+                                <path d="M24 8v16l10 8" />
+                            </svg>
+                            <div class="project-card__overlay">
+                                <a href="https://github.com/muskankhaskheli240-coder/Decodlabs_ThirdProject.git"
+                                    class="project-card__action" aria-label="GitHub" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                                <a href="https://muskankhaskheli240-coder.github.io/Decodlabs_ThirdProject/"
+                                    class="project-card__action" aria-label="Live Demo" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__tags">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+                            </div>
+                            <h3 class="project-card__title">MoodSphere</h3>
+                            <p class="project-card__desc">Mood-based room ambience app where colors and atmosphere
+                                transform dynamically based on emotion.</p>
+                        </div>
+                    </article>
+
+                    <!-- 4 -->
+                    <article class="project-card glass-card reveal" data-category="web" data-project="4" tabindex="0"
+                        role="button" aria-label="View details: Smart Form Pro AI">
+                        <div class="project-card__img" style="--pg:linear-gradient(135deg,#00271a,#065535)">
+                            <svg class="project-card__icon" viewBox="0 0 48 48" fill="none"
+                                stroke="rgba(74,222,128,0.6)" stroke-width="1.5" aria-hidden="true">
+                                <rect x="6" y="10" width="36" height="28" rx="3" />
+                                <path d="M6 18h36M14 26h8M14 32h16" />
+                            </svg>
+                            <div class="project-card__overlay">
+                                <a href="https://github.com/muskankhaskheli240-coder/Decodlabs_FourthProject.git"
+                                    class="project-card__action" aria-label="GitHub" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                                <a href="https://muskankhaskheli240-coder.github.io/Decodlabs_FourthProject/"
+                                    class="project-card__action" aria-label="Live Demo" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__tags">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span
+                                    class="tag">AI</span><span class="tag">JS</span>
+                            </div>
+                            <h3 class="project-card__title">Smart Form Pro AI</h3>
+                            <p class="project-card__desc">Intelligent form builder with smart validation,
+                                auto-suggestions, and seamless user experience.</p>
+                        </div>
+                    </article>
+
+                    <!-- 5 -->
+                    <article class="project-card glass-card reveal" data-category="web" data-project="5" tabindex="0"
+                        role="button" aria-label="View details: First Portfolio Website">
+                        <div class="project-card__img" style="--pg:linear-gradient(135deg,#1a1500,#4a3900)">
+                            <svg class="project-card__icon" viewBox="0 0 48 48" fill="none"
+                                stroke="rgba(250,204,21,0.6)" stroke-width="1.5" aria-hidden="true">
+                                <path d="M24 6l4 8 9 1.3-6.5 6.3 1.5 9L24 26l-8 4.6 1.5-9L11 15.3 20 14z" />
+                            </svg>
+                            <div class="project-card__overlay">
+                                <a href="https://github.com/muskankhaskheli240-coder/Muskan-s-Portfolio.git"
+                                    class="project-card__action" aria-label="GitHub" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                                <a href="https://muskankhaskheli240-coder.github.io/Muskan-s-Portfolio/"
+                                    class="project-card__action" aria-label="Live Demo" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__tags">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+                            </div>
+                            <h3 class="project-card__title">First Portfolio Website</h3>
+                            <p class="project-card__desc">My very first personal portfolio — the milestone that started
+                                this entire journey.</p>
+                        </div>
+                    </article>
+
+                    <!-- 6 -->
+                    <article class="project-card glass-card reveal" data-category="uiux" data-project="6" tabindex="0"
+                        role="button" aria-label="View details: Neumorphic Animated Form">
+                        <div class="project-card__img" style="--pg:linear-gradient(135deg,#1a001a,#3d0050)">
+                            <svg class="project-card__icon" viewBox="0 0 48 48" fill="none"
+                                stroke="rgba(192,132,252,0.6)" stroke-width="1.5" aria-hidden="true">
+                                <rect x="8" y="12" width="32" height="24" rx="6" />
+                                <path d="M16 22h16M16 28h10" />
+                            </svg>
+                            <div class="project-card__overlay">
+                                <a href="https://github.com/muskankhaskheli240-coder/Practice_Matarail_of_frontend.git"
+                                    class="project-card__action" aria-label="GitHub" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/muskankhaskheli240-coder/Practice_Matarail_of_frontend.git"
+                                    class="project-card__action" aria-label="Live Demo" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path
+                                            d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__tags">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span
+                                    class="tag">Neumorphism</span>
+                            </div>
+                            <h3 class="project-card__title">Neumorphic Animated Form</h3>
+                            <p class="project-card__desc">Soft-UI neumorphic form with smooth animations, tactile depth,
+                                and elegant interactive feedback.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- START WEEK 3 ADDITIONS Blog Section  -->
+<section class="blog section" id="blog" aria-label="Blog and Articles">
+  <div class="container">
+    <div class="section-label-wrap reveal">
+      <span class="section-label">From The Blog</span>
+    </div>
+    <h2 class="section-title reveal">Blog &amp; <span class="gradient-text">Articles</span></h2>
+ 
+    <div class="blog__grid">
+ 
+      <article class="blog-card glass-card reveal" data-article="1">
+        <img src="blog_1.png" alt="Modern CSS techniques illustration" loading="lazy" class="blog-card__img" />
+        <div class="blog-card__body">
+          <h3 class="blog-card__title">Modern CSS Techniques Every Frontend Developer Should Know</h3>
+          <p class="blog-card__excerpt">A look at the CSS features reshaping how we build layouts, from container queries to the latest selectors.</p>
+          <button type="button" class="blog-card__readmore" data-article-trigger="1" aria-label="Read more about Modern CSS Techniques">
+            Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </article>
+ 
+      <article class="blog-card glass-card reveal" data-article="2">
+        <img src="blog_2.png" alt="Clean JavaScript code illustration" loading="lazy" class="blog-card__img" />
+        <div class="blog-card__body">
+          <h3 class="blog-card__title">JavaScript Best Practices for Clean Code</h3>
+          <p class="blog-card__excerpt">Practical habits for writing JavaScript that's easier to read, test, and maintain over time.</p>
+          <button type="button" class="blog-card__readmore" data-article-trigger="2" aria-label="Read more about JavaScript Best Practices">
+            Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </article>
+ 
+      <article class="blog-card glass-card reveal" data-article="3">
+        <img src="blog_3.jpg" alt="Responsive design across devices illustration" loading="lazy" class="blog-card__img" />
+        <div class="blog-card__body">
+          <h3 class="blog-card__title">Why Responsive Design Matters</h3>
+          <p class="blog-card__excerpt">Why designing for every screen size isn't optional anymore, and how to approach it without the guesswork.</p>
+          <button type="button" class="blog-card__readmore" data-article-trigger="3" aria-label="Read more about Why Responsive Design Matters">
+            Read More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+      </article>
+ 
+    </div>
+  </div>
+</section>
+<!-- END WEEK 3 ADDITIONS -->
+
+        <!-- ============================================================
+     Testimonials section
+============================================================ -->
+        <section class="testimonials section" id="testimonials" aria-label="Testimonials">
+            <div class="container">
+                <div class="section-label-wrap reveal">
+                    <span class="section-label">Social Proof Testimonials</span>
+                </div>
+                <h2 class="section-title reveal">What People <span class="gradient-text">Say</span></h2>
+
+                <div class="testimonials__grid">
+
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card glass-card reveal">
+                        <div class="testimonial-card__header">
+                            <div class="testimonial-card__avatar"
+                                style="background:linear-gradient(135deg,#8A2BE2,#D946EF)">MN</div>
+                            <div class="testimonial-card__info">
+                                <span class="testimonial-card__name">Malik Nawaz</span>
+                                <span class="testimonial-card__role">Senior Developer</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card__rating">
+                            <svg viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <p class="testimonial-card__text">Muskan's work on our recent project was exceptional. Clean
+                            code, attention to detail, and incredible problem-solving skills. Highly recommend!</p>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card glass-card reveal">
+                        <div class="testimonial-card__header">
+                            <div class="testimonial-card__avatar"
+                                style="background:linear-gradient(135deg,#3b82f6,#06b6d4)">FH</div>
+                            <div class="testimonial-card__info">
+                                <span class="testimonial-card__name">Fatima Hassan</span>
+                                <span class="testimonial-card__role">UI/UX Designer</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card__rating">
+                            <svg viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <p class="testimonial-card__text">Working with Muskan was a breeze. Her understanding of design
+                            systems and implementation is outstanding. The attention to responsive design is perfect!
+                        </p>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card glass-card reveal">
+                        <div class="testimonial-card__header">
+                            <div class="testimonial-card__avatar"
+                                style="background:linear-gradient(135deg,#f97316,#ec4899)">AK</div>
+                            <div class="testimonial-card__info">
+                                <span class="testimonial-card__name">Ahmed Khan</span>
+                                <span class="testimonial-card__role">Project Manager</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card__rating">
+                            <svg viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#fbbf24" aria-hidden="true">
+                                <path
+                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <p class="testimonial-card__text">Muskan brings tremendous value to every project. Reliable,
+                            proactive, and always delivers on time. An absolute pleasure to work with!</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+     Contact section
+============================================================ -->
+        <section class="contact section" id="contact" aria-label="Contact">
+            <div class="container">
+                <div class="section-label-wrap reveal">
+                    <span class="section-label">Get In Touch</span>
+                </div>
+                <h2 class="section-title reveal">Let's Work <span class="gradient-text">Together</span></h2>
+
+                <div class="contact__grid">
+
+                    <!-- Left: Info -->
+                    <div class="contact__info reveal">
+                        <h3 class="contact__info-heading">Contact Details</h3>
+                        <p class="contact__info-sub">Have a project in mind? I'd love to hear about it. Send me a
+                            message and let's create something great.</p>
+
+                        <div class="contact__detail glass-card">
+                            <div class="contact__detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                    aria-hidden="true">
+                                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                                    <path d="M2 4l10 9 10-9" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact__detail-label">Email</span>
+                                <a href="mailto:muskankhaskheli240@gmail.com"
+                                    class="contact__detail-value">muskankhaskheli240@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact__detail glass-card">
+                            <div class="contact__detail-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact__detail-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/muskan-zahid-ali-khaskheli-41398b389"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="contact__detail-value">linkedin.com/in/muskan</a>
+                            </div>
+                        </div>
+
+                        <div class="contact__detail glass-card">
+                            <div class="contact__detail-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact__detail-label">GitHub</span>
+                                <a href="https://github.com/muskankhaskheli240-coder" target="_blank"
+                                    rel="noopener noreferrer" class="contact__detail-value">github.com/muskan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="contact__form-wrap reveal">
+                        <form class="contact__form" id="contactForm" novalidate>
+                            <div class="form-group">
+                                <input type="text" id="fname" class="form-input" placeholder=" " required
+                                    autocomplete="name" />
+                                <label for="fname" class="form-label">Your Name</label>
+                                <span class="form-error" id="fnameError" role="alert"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="femail" class="form-input" placeholder=" " required
+                                    autocomplete="email" />
+                                <span class="form-error" id="femailError" role="alert"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="fsubject" class="form-input" placeholder=" " required />
+                                <span class="form-error" id="fsubjectError" role="alert"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="fmessage" class="form-input form-textarea" placeholder=" " required
+                                    rows="5"></textarea>
+                                <span class="form-error" id="fmessageError" role="alert"></span>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                                </svg>
+                                Send Message
+                            </button>
+                            <div class="contact__success" id="formSuccess" role="alert" aria-live="polite">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14M22 4L12 14.01l-3-3" />
+                                </svg>
+                                Message sent! I'll get back to you soon.
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- START WEEK 3 ADDITIONS -->
+        <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle"
+            aria-hidden="true">
+            <div class="modal-box glass-card" role="document">
+                <button type="button" class="modal-close" id="projectModalClose" aria-label="Close project details">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M18 6L6 18M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <div class="modal-gallery" id="projectModalGallery" aria-label="Project screenshots">
+                    <img src="images/project-gallery1.jpg" alt="Project screenshot 1" loading="lazy"
+                        class="modal-gallery__img active" />
+                    <img src="images/project-gallery2.jpg" alt="Project screenshot 2" loading="lazy"
+                        class="modal-gallery__img" />
+                    <img src="images/project-gallery3.jpg" alt="Project screenshot 3" loading="lazy"
+                        class="modal-gallery__img" />
+                    <div class="modal-gallery__dots" id="projectModalDots" role="tablist"
+                        aria-label="Screenshot navigation"></div>
+                </div>
+
+                <div class="modal-body">
+                    <span class="modal-category" id="projectModalCategory">Web Development</span>
+                    <h3 class="modal-title" id="projectModalTitle">Project Title</h3>
+                    <p class="modal-desc" id="projectModalDesc">Full project description goes here.</p>
+
+                    <div class="modal-tech" id="projectModalTech" aria-label="Technologies used"></div>
+
+                    <div class="modal-links">
+                        <a href="#" id="projectModalGithub" class="btn btn--glass" target="_blank"
+                            rel="noopener noreferrer" aria-label="View source code on GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="#" id="projectModalDemo" class="btn btn--primary" target="_blank"
+                            rel="noopener noreferrer" aria-label="View live demo">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                            </svg>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END WEEK 3 ADDITIONS -->
+
+
+
+        <!-- START WEEK 3 ADDITIONS  Blog Read More addition -->
+<div class="modal-overlay" id="articleModal" role="dialog" aria-modal="true" aria-labelledby="articleModalTitle" aria-hidden="true">
+  <div class="modal-box glass-card modal-box--article" role="document">
+    <button type="button" class="modal-close" id="articleModalClose" aria-label="Close article">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+ 
+    <img src="images/blog-detail1.jpg" alt="" loading="lazy" class="modal-article__img" id="articleModalImg" />
+ 
+    <div class="modal-body">
+      <h3 class="modal-title" id="articleModalTitle">Article Title</h3>
+      <div class="modal-article__meta">
+        <span id="articleModalDate"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> June 1, 2026</span>
+        <span id="articleModalReadTime"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 5 min read</span>
+      </div>
+      <p class="modal-desc" id="articleModalContent">Full article content goes here.</p>
+      <div class="modal-tech" id="articleModalTags" aria-label="Article tags"></div>
+    </div>
+  </div>
+</div>
+<!-- END WEEK 3 ADDITIONS -->
+
+    </main>
+
+    <!-- ============================================================
+     Footer section
+============================================================ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__inner">
+                <p class="footer__copy">&copy; 2024 Muskan Zahid Ali Khaskheli. Built with
+                    <svg class="footer__heart" viewBox="0 0 20 20" fill="#d946ef" aria-label="love">
+                        <path
+                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                    </svg>
+                    and clean code.
+                </p>
+                <div class="footer__socials">
+                    <a href="mailto:muskankhaskheli240@gmail.com" class="footer__social" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="M2 4l10 9 10-9" />
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/muskan-zahid-ali-khaskheli-41398b389" target="_blank"
+                        rel="noopener noreferrer" class="footer__social" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/muskankhaskheli240-coder" target="_blank" rel="noopener noreferrer"
+                        class="footer__social" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
