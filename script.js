@@ -3,7 +3,7 @@ import { getProfile, getSkills, getProjects, getContact, getBlogPosts } from './
 
 
 /* ============================================================
-   THEME SYSTEM — Dark/Light mode with localStorage
+   theme system
 ============================================================ */
 (function initThemeSystem() {
   const themeToggle = document.getElementById('themeToggle');
@@ -93,7 +93,7 @@ import { getProfile, getSkills, getProjects, getContact, getBlogPosts } from './
 
 
 /* ============================================================
-   TYPEWRITER EFFECT
+   typing effect
 ============================================================ */
 (function initTypewriter() {
   const el = document.getElementById('typedText');
@@ -1466,9 +1466,7 @@ function week3TrapFocus(container) {
     field.el.addEventListener('blur', () => validateField(key));
   });
 
-  // Validate on submit; block invalid submissions.
-  // Runs in capture phase so it executes BEFORE the existing
-  // submit handler in script.js, and stops it if invalid.
+  
   form.addEventListener('submit', (e) => {
     let allValid = true;
     Object.keys(fields).forEach((key) => {
@@ -1481,7 +1479,7 @@ function week3TrapFocus(container) {
       const firstInvalid = form.querySelector('.form-input.invalid');
       if (firstInvalid) firstInvalid.focus();
     }
-  }, true); // capture = true → runs before the existing listener
+  }, true); 
 })();
 
 /* END WEEK 3 ADDITIONS */
